@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\10203021\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\RS485_demo2\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-df049f4e43fb9e17329d5d16143acac6f7781ed6.jar" />
+    </item>
+    <item
+        jar="D:\RS485_demo2\app\libs\hcbiapi.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="c46cff14dc9a68ca5dc84c9fd72c123617fae524">
+        <dex dex="D:\RS485_demo2\app\build\intermediates\pre-dexed\debug\hcbiapi-23b642871452484f661d859325cdd2b843c5fdd1.jar" />
+    </item>
+
+</items>

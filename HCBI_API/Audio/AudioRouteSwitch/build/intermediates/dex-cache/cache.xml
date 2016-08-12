@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\10012032\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="D:\Project\apk\AudioDemo1\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-ba029eb4fc28a38416382e3f80fe7bc692b70504.jar" />
+    </item>
+    <item
+        jar="D:\Project\apk\AudioDemo1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="D:\Project\apk\AudioDemo1\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-88fb12bf765e24a46fad78aabfe70796c9226c29.jar" />
+    </item>
+    <item
+        jar="D:\Project\apk\AudioDemo1\app\build\intermediates\exploded-aar\com.android.support\support-v13\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7f9cca1caa023a880b00c382bcc5c90245ae4895">
+        <dex dex="D:\Project\apk\AudioDemo1\app\build\intermediates\pre-dexed\debug\classes-c5ea6a3109d141f0003ab484b6705ab6cdc5d8f7.jar" />
+    </item>
+    <item
+        jar="D:\Project\apk\AudioDemo1\app\build\intermediates\exploded-aar\com.android.support\support-v13\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="def3eff2b7b4774d96ae15b07b3fc0111edbfe24">
+        <dex dex="D:\Project\apk\AudioDemo1\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-c5cac8c6e22f0882955ca645dfcaf65854afd20c.jar" />
+    </item>
+    <item
+        jar="D:\Project\apk\AudioDemo1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="D:\Project\apk\AudioDemo1\app\build\intermediates\pre-dexed\debug\classes-24f994a25c824009ac22233095f16d741caaa523.jar" />
+    </item>
+
+</items>

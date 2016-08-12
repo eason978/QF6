@@ -1,0 +1,229 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: Gdz8+rKvEYrVnynjZHjHL2Cpmaw=
+Created-By: 1.0 (Android)
+
+Name: res/raw/four.mp3
+SHA1-Digest: b/Wsj3u+oTgjdaciBWwjMQouN94=
+
+Name: res/layout/fanconv_activity_main.xml
+SHA1-Digest: P9v37N3BSZAmgqKUfo6P2/j/Wv4=
+
+Name: lib/armeabi-v7a/libuvc.so
+SHA1-Digest: 4cOkKwylhHatKbO1+7dmQdXUrek=
+
+Name: res/layout/camera_activity_main.xml
+SHA1-Digest: DC1IGjcz6RdVG/d38KI2//METd0=
+
+Name: res/layout/fancooling_activity_main.xml
+SHA1-Digest: a7twWGmQfp60i8IXDTdp2YBeVH8=
+
+Name: res/layout/scalefft_activity_main.xml
+SHA1-Digest: cdR4uRSs2Lm/K3tLW/2cdj6fQak=
+
+Name: res/layout/ethernet_activity_main.xml
+SHA1-Digest: 6JAznyk8/FVzvBuNoBotj54zi/w=
+
+Name: res/layout/rs485_activity_main.xml
+SHA1-Digest: M4SRFEIiHr/aKcO+0JnU+liqMls=
+
+Name: res/layout/gpio_activity_main.xml
+SHA1-Digest: BJhZ1qvoaYIChrRl3eg5fBzen2M=
+
+Name: res/xml/usb_device_filter.xml
+SHA1-Digest: 0fBrRN0PAv419Saa7l//AqplmXk=
+
+Name: res/drawable/launcher_icon_pass.xml
+SHA1-Digest: myveOQDIOJFCQgHjztrjsK4bng0=
+
+Name: res/layout/ovenled2_activity_main.xml
+SHA1-Digest: nPlbnlwZtEnVGeCswGERxQoIUWo=
+
+Name: res/layout/zxing_capture.xml
+SHA1-Digest: chvwDIWAu5ZpN7tsNd+d6a0aWmU=
+
+Name: res/layout/probe_activity_main.xml
+SHA1-Digest: wJWSkacbMKg6F2dcaybqvO4/ovQ=
+
+Name: res/layout/video_activity_main.xml
+SHA1-Digest: Zmz2TTXX73+ZzVaUxzoGL1SeuQU=
+
+Name: res/raw/five.mp3
+SHA1-Digest: koXEYEdtaVkX8br+O7OtCv4OCb4=
+
+Name: res/drawable/launcher_icon_animation.xml
+SHA1-Digest: 9v+rwp4oFLhh7W7SVxs5PB97Sf4=
+
+Name: res/layout/button_activity_main.xml
+SHA1-Digest: YlSA0pUmF1TWm9o7VX2h0DE6LvU=
+
+Name: res/raw/tenthousandhz.wav
+SHA1-Digest: QVPuJSxQdedctJqP0OfegBhPQu4=
+
+Name: res/layout/usb_external_activity_main.xml
+SHA1-Digest: Zw+Xd32/p5U3hme0onzjtWS8Ph0=
+
+Name: res/raw/one.mp3
+SHA1-Digest: ti7CUjzzZeL+IG75n2TKf/Ngzr0=
+
+Name: lib/armeabi-v7a/libUVCCamera.so
+SHA1-Digest: uKOh71WOEjgoYXMvK539VNtu/p4=
+
+Name: res/drawable/touch.png
+SHA1-Digest: RWddCya4b1nMo/fgf4Rb3Q9p92U=
+
+Name: res/raw/three.mp3
+SHA1-Digest: gQKER2yAUi1/5e7j5BnFkXfl9DM=
+
+Name: lib/armeabi-v7a/libHCBIAPI.so
+SHA1-Digest: Pg/a0jK/+SPWgXEIya439arWKgc=
+
+Name: res/layout/knob_activity_main.xml
+SHA1-Digest: Q/hvEWz6Z/kyVRDCgKWt2VwpQHQ=
+
+Name: res/raw/piano.wav
+SHA1-Digest: cfN8H6ttW8spW5QF/exXucW/Xdg=
+
+Name: res/layout/usb_internal_activity_main.xml
+SHA1-Digest: I9NoVKYJkaTYMCx+l54S3zF+Xvs=
+
+Name: res/mipmap-hdpi-v4/ic_launcher.png
+SHA1-Digest: 7rQl6EYeTTp31EHiQqxTWNvHumI=
+
+Name: res/raw/camera_click.ogg
+SHA1-Digest: YFRYrAUl/Hy7hjB0DgHiU97mql8=
+
+Name: lib/armeabi-v7a/libusb100.so
+SHA1-Digest: D3ltThaB/05F3jv4Sig1j13Mrog=
+
+Name: res/layout/scalebft_activity_main.xml
+SHA1-Digest: 7/99uasNK3dYaYElLqX+QR6bReU=
+
+Name: res/layout/rgbled_activity_main.xml
+SHA1-Digest: /5N43s2mTOh5cbl0/Xi1oNhB7HE=
+
+Name: resources.arsc
+SHA1-Digest: i33/cVSrmt8vmQ5wqRlFGprJLss=
+
+Name: res/drawable/launcher_icon_caution.xml
+SHA1-Digest: 5P7jGdRgeGvj5gHrsOU9Cbn4waw=
+
+Name: res/drawable/launcher_icon_selector.xml
+SHA1-Digest: VBAYPd9ndChqbqduOy3/a4L6wzY=
+
+Name: AndroidManifest.xml
+SHA1-Digest: qjiqO0eVjMii9N2vlGhhvdGvq5Y=
+
+Name: res/layout/scipimgversion_activity_main.xml
+SHA1-Digest: Hv6uqTwQ0QWYJbLXEKj0udPY+Cg=
+
+Name: res/layout/nfc_activity_main.xml
+SHA1-Digest: pO/eSjB/9X+4nNddedTtKpTnsd4=
+
+Name: res/drawable/launcher_icon_fail.xml
+SHA1-Digest: wuIytM0wdl5baAX56sUYxGB9vUI=
+
+Name: res/layout/panel_activity_main.xml
+SHA1-Digest: jmZH1rB6V/uUGq5oGM0UZXkhW0k=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher.png
+SHA1-Digest: he0u+MMYOPtjL0qaRCkw275Ntw0=
+
+Name: res/layout/video_float_layout.xml
+SHA1-Digest: bT6/WD+2Qw0yDdeHU97cvM5d/+c=
+
+Name: res/layout/ovenled1_activity_main.xml
+SHA1-Digest: WALN6tZaUY87RKD7hfRqMRTqq44=
+
+Name: res/layout/launcher_activity_runin.xml
+SHA1-Digest: 70oWEYwNeO1NiLoeJbbok3LsQJU=
+
+Name: res/layout/scalegraph_activity_main.xml
+SHA1-Digest: qv5W7J7UHknFSBlTiYWloARTjBk=
+
+Name: res/layout/heater1_activity_main.xml
+SHA1-Digest: MlzR1R+xduQte7aSywHcxR3Jnb8=
+
+Name: res/layout/led_red_activity_main.xml
+SHA1-Digest: 7/9sYKfGvthmJBZQlQvcBHGJYUo=
+
+Name: res/layout/sdcard_activity_main.xml
+SHA1-Digest: uxYEUiMfUHZa82JmPJv3BKnfAc4=
+
+Name: res/layout/touch_activity_main.xml
+SHA1-Digest: RRcIY3bPBMw1Y9a9KvP3joYQvxY=
+
+Name: res/layout/usbcam_activity_main.xml
+SHA1-Digest: L9XXayv8Go4JZKj0EiqtcH0C7Fg=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.png
+SHA1-Digest: eAe4aQ3DNPRP6pSEW0HgZPPU5nE=
+
+Name: res/layout/accelerometer_activity_main.xml
+SHA1-Digest: 7TcsEQz9cdB55hoP6OStMNBg8SA=
+
+Name: res/layout/doorswitch_activity_main.xml
+SHA1-Digest: Lro6NWlQvRTG0FcPe2rvak4XupI=
+
+Name: res/layout/heater2_activity_main.xml
+SHA1-Digest: ZvtXaTH2NaiLESSlxmNrrVGYZFE=
+
+Name: res/layout/thermal_activity_main.xml
+SHA1-Digest: oUscJE4XqQHMIpBWviM2A+T6NdA=
+
+Name: META-INF/LICENSE.txt
+SHA1-Digest: 1/mTrU67IKIwjwcnRSwy7p9zmJE=
+
+Name: res/layout/zxing_barcode_scanner.xml
+SHA1-Digest: jlgGTVF5n5SA/hTnceMRBh0CdCE=
+
+Name: res/raw/google.mp3
+SHA1-Digest: fYqWzRsTe2G3XS7/Hg1HdAAFwBA=
+
+Name: res/layout/lightsensor_activity_main.xml
+SHA1-Digest: glCDZQyK0rkc/kpKHKlUK5+/nlA=
+
+Name: res/layout/topheater_activity_main.xml
+SHA1-Digest: 5Jl0Y7vZr5u8G7LQ6eqftdry/vQ=
+
+Name: res/layout/scipled_activity_main.xml
+SHA1-Digest: GSlHuCQFCbEXAoz6kP/5MyXJU0w=
+
+Name: META-INF/jdom-info.xml
+SHA1-Digest: LZvndAnrzGaJRdqB+bGIJl86RwQ=
+
+Name: res/drawable/launcher_icon_default.xml
+SHA1-Digest: jVnPHxNXIxYjoiLGdRfka3dPN8o=
+
+Name: res/layout/led_white_activity_main.xml
+SHA1-Digest: NChjRYG2+Z2nLT89p0nrJMlfAWA=
+
+Name: res/raw/settings.xml
+SHA1-Digest: Svy+515EYVruGjSWZpNWW61lLQs=
+
+Name: res/drawable/launcher_icon_highlight.xml
+SHA1-Digest: rdhUixfz6s/a1BXC24BTBoyi30Y=
+
+Name: res/drawable/usbcam_border.xml
+SHA1-Digest: E4o3s4ZPnXyRJLOEGV1uIXsA/pM=
+
+Name: res/raw/two.mp3
+SHA1-Digest: 0JWqua0UUGtPoPUxU91KI4wCpaI=
+
+Name: res/layout/bottomheater_activity_main.xml
+SHA1-Digest: RrgIQiN89JlsNMkfsCfY6BlbCT0=
+
+Name: res/drawable/runin_bracket.xml
+SHA1-Digest: jcBxXMjFvNdLSw6StbySMxc8Z7k=
+
+Name: res/raw/sample.mp4
+SHA1-Digest: csvFuXYVLzYjbg9xylMvhMH8dUE=
+
+Name: classes.dex
+SHA1-Digest: bY421lRpRMp0xrzl9HzzpcsFjUk=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher.png
+SHA1-Digest: w8zlhwlle2aoufXsl5l6tyaB0OQ=
+
+Name: res/raw/zxing_beep.ogg
+SHA1-Digest: KwVVsTfH9F4eJF0ZHW0XAnr1YbQ=
+

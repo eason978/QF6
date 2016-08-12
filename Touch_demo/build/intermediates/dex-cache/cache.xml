@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Project\QF6\MyAPK\backup\Final\Touch_demo\app\libs\hcbiapi.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="63f4ede8826eeb93c50149be25c076bf2aa3e5da">
+        <dex dex="D:\Project\QF6\MyAPK\backup\Final\Touch_demo\app\build\intermediates\pre-dexed\debug\hcbiapi-a395af3a340410ea825bb42ba19dc38c8553cb2e.jar" />
+    </item>
+
+</items>

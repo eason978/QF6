@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/qic/StudioProjects/java_client_test1/app/build/intermediates/res/merged/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 37,
+                    "endOffset": 88
+                },
+                "from": {
+                    "file": "/Users/qic/StudioProjects/java_client_test1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 692,
+                        "endColumn": 37,
+                        "endOffset": 725
+                    }
+                }
+            }
+        ]
+    }
+]

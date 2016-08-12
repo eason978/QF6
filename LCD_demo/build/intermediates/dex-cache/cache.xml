@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Project\QF6\MyAPK\backup\Final\LCD_demo\app\libs\hcbiapi.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8b0d268981099f9f04df4c8a4d4be3c20136ff9c">
+        <dex dex="D:\Project\QF6\MyAPK\backup\Final\LCD_demo\app\build\intermediates\pre-dexed\debug\hcbiapi-d1ccfc178f202a49d8b7a88f0ad0a81ec594bde8.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AppData\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\Project\QF6\MyAPK\backup\Final\LCD_demo\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-dbf9d394083b107974b7718dc753d9c5b8716729.jar" />
+    </item>
+    <item
+        jar="C:\Users\10311028\Desktop\LCD_demo\app\libs\hcbiapi.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8d61ed0c806715983369e9b79c7d7824d01b2b6b">
+        <dex dex="C:\Users\10311028\Desktop\LCD_demo\app\build\intermediates\pre-dexed\debug\hcbiapi-895e21c02cc063dabd1f6d7150d43338dd5f2fbb.jar" />
+    </item>
+
+</items>

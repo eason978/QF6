@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Camera_demo\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "D:\\Camera_demo\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\10203021\\Android_L_MTP\\Camera\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\10203021\\Android_L_MTP\\Camera\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "D:\\HCBI\\Camera\\apk\\Camera_demo\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "D:\\HCBI\\Camera\\apk\\Camera_demo\\app\\src\\main\\res\\menu\\main.xml"
+    }
+]

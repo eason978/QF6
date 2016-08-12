@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.touch_demo.TouchDemo" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>
+<!-- From: file:/D:/Project/QF6/MyAPK/backup/Final/Touch_demo/app/src/main/res/menu/touch_demo.xml -->

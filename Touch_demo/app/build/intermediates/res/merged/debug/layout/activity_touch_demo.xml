@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="6dp"
+    tools:context="com.example.rs485_demo.MainActivity" >
+
+    <Button
+        android:id="@+id/Button1"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="270dp"
+        android:text="Enable\ntouch" />
+    <Button
+        android:id="@+id/Button2"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button1"
+        android:layout_alignBottom="@+id/Button1"
+        android:layout_marginLeft="250dp"
+        android:layout_toRightOf="@+id/Button1"
+        android:text="Disable\ntouch" />
+
+</RelativeLayout><!-- From: file:/D:/Project/QF6/MyAPK/backup/Final/Touch_demo/app/src/main/res/layout/activity_touch_demo.xml -->

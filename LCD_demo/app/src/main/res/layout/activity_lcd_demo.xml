@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="6dp"
+    tools:context="com.example.rs485_demo.MainActivity" >
+
+    <Button
+        android:id="@+id/mButton1"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="關閉螢幕"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="150dp" />
+
+    <Button
+        android:id="@+id/mButton2"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mButton1"
+        android:layout_alignBottom="@+id/mButton1"
+        android:layout_marginLeft="200dp"
+        android:layout_toRightOf="@+id/mButton1"
+        android:text="五秒後關閉螢幕" />
+
+    <Button
+        android:id="@+id/mButton3"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mButton1"
+        android:layout_marginTop="150dp"
+        android:layout_alignLeft="@+id/mButton1"
+        android:text="降低螢幕亮度" />
+
+    <Button
+        android:id="@+id/mButton4"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mButton3"
+        android:layout_alignLeft="@+id/mButton2"
+        android:text="增加螢幕亮度" />
+
+</RelativeLayout>

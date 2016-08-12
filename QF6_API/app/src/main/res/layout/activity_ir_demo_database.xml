@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/brand"
+        android:layout_below="@+id/hintBrand"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/brandLayout">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/device"
+        android:layout_toEndOf="@+id/hintBrand"
+        android:layout_below="@+id/hintDevice">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/deviceLayout">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/hintDevice">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_hintRemote"
+            android:id="@+id/hintRemote"
+            android:textColor="#ff0000"
+            android:textSize="30dp"
+            android:layout_marginStart="153dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btnPower"
+            android:id="@+id/btnPower"
+            android:layout_marginTop="114dp"
+            android:textSize="45sp"
+            android:layout_below="@+id/hintRemote"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="86dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btn1"
+            android:id="@+id/btn1"
+            android:layout_below="@+id/btnPower"
+            android:layout_alignStart="@+id/btnPower"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btn2"
+            android:id="@+id/btn2"
+            android:layout_alignBottom="@+id/btn1"
+            android:layout_toEndOf="@+id/btn1"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btn3"
+            android:id="@+id/btn3"
+            android:layout_alignBottom="@+id/btn2"
+            android:layout_toEndOf="@+id/btn2"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btn4"
+            android:id="@+id/btn4"
+            android:layout_below="@+id/btn1"
+            android:layout_alignStart="@+id/btn1"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btn5"
+            android:id="@+id/btn5"
+            android:layout_alignBottom="@+id/btn4"
+            android:layout_toEndOf="@+id/btn4"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btn6"
+            android:id="@+id/btn6"
+            android:layout_alignBottom="@+id/btn5"
+            android:layout_alignStart="@+id/btn3"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btn7"
+            android:id="@+id/btn7"
+            android:layout_below="@+id/btn4"
+            android:layout_alignStart="@+id/btn4"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btn8"
+            android:id="@+id/btn8"
+            android:layout_alignBottom="@+id/btn7"
+            android:layout_toEndOf="@+id/btn7"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btn9"
+            android:id="@+id/btn9"
+            android:layout_alignBottom="@+id/btn8"
+            android:layout_alignStart="@+id/btn6"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btn0"
+            android:id="@+id/btn0"
+            android:layout_below="@+id/btn8"
+            android:layout_toEndOf="@+id/btn7"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btnChUp"
+            android:id="@+id/btnChUp"
+            android:textSize="45sp"
+            android:layout_above="@+id/btnVolDn"
+            android:layout_toEndOf="@+id/btn3"
+            android:layout_marginStart="50dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btnChDn"
+            android:id="@+id/btnChDn"
+            android:layout_below="@+id/btnChUp"
+            android:layout_alignStart="@+id/btnChUp"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btnVolUp"
+            android:id="@+id/btnVolUp"
+            android:layout_above="@+id/btnVolDn"
+            android:layout_alignStart="@+id/btnVolDn"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_mode_btnVolDn"
+            android:id="@+id/btnVolDn"
+            android:layout_above="@+id/btn9"
+            android:layout_toEndOf="@+id/btnChDn"
+            android:layout_marginStart="50dp"
+            android:textSize="45sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:text="@string/db_mode_hintBrand"
+        android:id="@+id/hintBrand"
+        android:textColor="#0015ff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:text="@string/db_mode_hintDevice"
+        android:id="@+id/hintDevice"
+        android:textColor="#0015ff"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/hintBrand" />
+
+</RelativeLayout>

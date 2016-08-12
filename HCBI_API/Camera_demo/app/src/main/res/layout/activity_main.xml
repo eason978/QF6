@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/surface_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:id="@+id/Capture"
+        android:background="#2861e4"
+        android:layout_marginEnd="26dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R"
+        android:id="@+id/Record"
+        android:layout_above="@+id/Capture"
+        android:layout_alignStart="@+id/Capture"
+        android:layout_marginBottom="29dp"
+        android:background="#0bf546" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:id="@+id/Switch"
+        android:layout_below="@+id/Capture"
+        android:layout_alignStart="@+id/Capture"
+        android:layout_marginTop="31dp"
+        android:background="#f8060e" />
+
+</RelativeLayout>

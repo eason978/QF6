@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".FullscreenActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true" />
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/speakerOn"
+            android:layout_width="235dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Switch to interphone" />
+
+        Button
+            android:id="@+id/lineoutOn"
+            android:layout_width="235dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="150dp"
+            android:text="Turn On Line-out" />
+
+        Button
+            android:id="@+id/micOn"
+            android:layout_width="235dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="300dp"
+            android:text="Turn On Internal Mic" />
+
+        Button
+            android:id="@+id/lineinOn"
+            android:layout_width="235dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="450dp"
+            android:text="Turn On Line-in" />
+
+        <Button
+            android:id="@+id/speakerOff"
+            android:layout_width="235dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="20dp"
+            android:text="Switch to Normal Speaker" />
+
+        Button
+            android:id="@+id/lineoutOff"
+            android:layout_width="235dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="150dp"
+            android:text="Turn Off Line-out" />
+
+        Button
+            android:id="@+id/micOff"
+            android:layout_width="235dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="300dp"
+            android:text="Turn Off Internal Mic" />
+
+        Button
+            android:id="@+id/lineinOff"
+            android:layout_width="235dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="450dp"
+            android:text="Turn Off Line-in" />
+        </FrameLayout>
+
+</FrameLayout><!-- From: file:/C:/Users/93011206/AndroidstudioProjects/AudioPathSwitch1/app/src/main/res/layout/activity_fullscreen.xml -->

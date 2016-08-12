@@ -1,0 +1,252 @@
+<!--
+Element state
+    Description: An element used exclusively by launcher to record state
+    Attributes:
+        location - It remembers launcher menu state
+
+Element test
+    Description: An element used exclusively by torture to arrange torture test
+    Attributes:
+        name - Name of the test item
+        group - Test items in the same group run simultaneously
+        result - Format is [PASS/FAIL]
+        time - Timeout value for a test item
+        x - x coordinate of window
+        xx - Width of window
+        y - y coordinate of window
+        yy - Height of window
+
+Element var
+    Description: This is a container of a variable
+    Attributes:
+        name - Name of a variable
+        type - Data type of a variable [bool/int/str]
+        value - Value of the variable
+
+Element button
+    Description: This element describe a button that executes shell commands
+    Attributes:
+        name - Name of a button
+        cmd - Command string to be executed
+        confirm - show confirm dialogue (default: false) [true/false]
+        result - (Optional) Result from running the button commands
+
+Element station
+    Description: Add as a test item to a test station such as BLT1
+    Attributes:
+        name - Name of a test station (BLT#/SLT#/...)
+        content - Which test routine to run
+        log - Result log
+        result - Format is [PASS/FAIL]
+        weight - Test item priority (under 0 => autorun, over 200 => bottom placement)
+-->
+<settings>
+    <launcher station="root">
+        <var name="WeightedExec" type="bool" value="false" />
+        <var name="TextSize" type="int" value="40" />
+        <var name="ButtonHeight" type="int" value="150" />
+        <var name="NumOfColumns" type="int" value="6" />
+        <var name="NumOfRows" type="int" value="5" />
+        <var name="MaxRetries" type="int" value="3" />
+        <var name="TortureLength" type="int" value="120" />
+        <var name="Ssid" type="str" value="Terry" />
+        <var name="NontestItems" type="str" value="back clearstate" />
+        <button name="run-in" cmd="am start -n com.quanta.woa.mtp/.launcher.RuninActivity"
+            confirm="true" result="" />
+        <!--button name="qrcode" cmd="am start -n com.quanta.woa.mtp/.launcher.QRCodeActivity" /-->
+        <!--button name="clear state"
+            cmd="rm /sdcard/QUANTA_MTP/settings.xml; pm clear com.quanta.woa.mtp" confirm="true" /-->
+        <button name="restart" cmd="reboot; sleep 5" confirm="true" />
+    </launcher>
+    <runin duration="60" log="">
+        <!--test name="camera" /-->
+        <test name="usbcam" />
+        <test name="video" />
+        <test name="sysinfo" />
+        <!--test name="mem" /-->
+        <test name="storage" />
+        <test name="backlight" />
+    </runin>
+    <sysinfo>
+        <var name="ImageVersion" type="str" value="intel/byt_t_crv2_64/byt_t_crv2:4.4.4/KTU84P/eng.terry.tseng.20151014.153844:eng/dev-keys" />
+        <var name="ScipVersion" type="str" value="0x00010f01 (0.1.15a) [Jun 18 2015 14:23:38]" />
+        <var name="WifiMac" type="str" value="([[A-F][a-f][0-9]]{2}\:){5}[[A-F][a-f][0-9]]{2}" />
+        <var name="BiosVersion" type="str" value="HCBI.150401.0" />
+        <var name="CpuType" type="str" value="Z3735F" />
+        <var name="CpuFreq" type="str" value="1.33GHz" />
+        <var name="DdrSize" type="str" value="19[0-9][0-9][0-9][0-9][0-9]" />
+        <var name="DiskSize" type="str" value="7[0-9][0-9][0-9][0-9][0-9][0-9]" />
+        <var name="Temp" type="str" value="^[12345678][0-9]\d{3}" />
+        <var name="Ssid" type="str" value="BU1QF6" />
+        <var name="RssiWifi" type="int" value="-100" />
+        <var name="RssiBt" type="int" value="-100" />
+        <var name="BtName" type="str" value="BU1QF6" />
+        <var name="Luminance" type="str" value="^\d{1,3}" />
+        <var name="FwId" type="str" value="10" />
+        <station name="BLT1"
+            content="checkBiosVersion checkCpuType checkDdrSize checkDiskSize checkTemp"
+            retries="0" log="" result="" weight="-100" />
+        <station name="BLT2"
+            content="wifiSearch"
+            retries="0" log="" result="" weight="-100" />
+        <station name="FFT1"
+            content="checkBiosVersion checkWifiMac checkBtAddr checkTouch checkTemp wifiSearch btSearch"
+            retries="0" log="" result="" weight="-100" />
+    </sysinfo>
+    <audiotouch>
+        <!--station name="BFT2" content="audioBeforeTouch" retries="0" log="" result="" weight="100" /-->
+    </audiotouch>
+    <audio_auto>
+        <var name="Timeout" type="int" value="10000" />
+        <station name="BLT1" content="AudioAuto" retries="0" log="" result="" weight="100" />
+        <station name="FFT1" content="AudioAuto" retries="0" log="" result="" weight="100" />
+    </audio_auto>
+    <mem>
+        <var name="Size" type="str" value="10M" />
+        <var name="Loop" type="int" value="1" />
+        <var name="Timeout" type="int" value="120000" />
+        <!--station name="QINT" retries="0" content="memTest" log="" result="" weight="100" /-->
+    </mem>
+    <camera>
+        <var name="Timeout" type="int" value="30" />
+        <var name="ImagePath" type="str" value="FrontCamera" />
+        <var name="Auto" type="bool" value="false" />
+        <var name="PreviewWidth" type="int" value="640" />
+        <var name="PreviewHeight" type="int" value="480" />
+        <station name="BLT1" content="001" retries="0" log="" result="" weight="100" />
+        <station name="FFT1" content="001" retries="0" log="" result="" weight="100" />
+    </camera>
+    <storage>
+        <var name="Timeout" type="int" value="120000" />
+        <var name="FileSize" type="str" value="50" />
+        <!--station name="QINT" retries="0" content="checkDisk" log="" result="" weight="100" /-->
+    </storage>
+    <button>
+        <var name="Timeout" type="int" value="30" />
+        <station name="BLT1" content="000" retries="0" log="" result="" weight="100" />
+    </button>
+    <touch>
+        <var name="Timeout" type="int" value="30" />
+        <station name="FFT1" content="000" retries="0" log="" result="" weight="100" />
+    </touch>
+    <knob>
+        <var name="Timeout" type="int" value="15" />
+        <!--station name="BFT1" content="000" retries="0" log="" result="" weight="100" /-->
+        <!--station name="FFT1" content="000" retries="0" log="" result="" weight="100" /-->
+    </knob>
+    <rgbled>
+        <var name="Timeout" type="int" value="30" />
+        <!--station name="BFT1" content="000" retries="0" log="" result="" weight="100" /-->
+    </rgbled>
+    <rs485>
+        <var name="Timeout" type="int" value="15" />
+        <station name="BLT1" content="000" retries="0" log="" result="" weight="100" />
+    </rs485>
+    <ethernet>
+        <var name="Timeout" type="int" value="60" />
+        <var name="ip0" type="str" value="192.168.0.0" />
+        <var name="mask0" type="int" value="8" />
+        <var name="ip1" type="str" value="10.243.0.0" />
+        <var name="mask1" type="int" value="7" />
+        <station name="BLT1" content="000" retries="0" log="" result="" weight="100" />
+    </ethernet>
+    <panel>
+        <var name="Timeout" type="int" value="30" />
+        <station name="BLT1" content="000" retries="0" log="" result="" weight="100" />
+        <station name="FFT1" content="000" retries="0" log="" result="" weight="100" />
+    </panel>
+    <backlight>
+        <var name="Timeout" type="int" value="15000" />
+        <station name="BLT1" content="blLowHighLow" retries="0" log="" result="" weight="100" />
+        <station name="FFT1" content="blLowHighLow" retries="0" log="" result="" weight="100" />
+    </backlight>
+    <led_white>
+        <var name="Timeout" type="int" value="30" />
+        <station name="BLT1" content="000" retries="0" log="" result="" weight="100" />
+    </led_white>
+    <led_red>
+        <var name="Timeout" type="int" value="30" />
+        <station name="BLT1" content="000" retries="0" log="" result="" weight="100" />
+    </led_red>
+    <gpio>
+        <var name="Timeout" type="int" value="15" />
+        <station name="BLT1" content="000" retries="0" log="" result="" weight="100" />
+    </gpio>
+    <usb_internal>
+        <var name="Timeout" type="int" value="20" />
+        <station name="BLT1" content="000" retries="0" log="" result="" weight="100" />
+    </usb_internal>
+    <usb_external>
+        <var name="Timeout" type="int" value="20" />
+        <station name="BLT1" content="000" retries="0" log="" result="" weight="100" />
+    </usb_external>
+    <sdcard>
+        <var name="Timeout" type="int" value="20" />
+        <station name="BLT1" content="000" retries="0" log="" result="" weight="100" />
+        <station name="FFT1" content="000" retries="0" log="" result="" weight="100" />
+    </sdcard>
+    <thermal>
+        <var name="Timeout" type="int" value="20" />
+    </thermal>
+    <fancooling>
+        <var name="Timeout" type="int" value="15000" />
+        <var name="DropSamples" type="int" value="2" />
+        <var name="LowerBound0At100" type="int" value="5040" />
+        <var name="UpperBound0At100" type="int" value="9360" />
+        <var name="LowerBound1At100" type="int" value="5040" />
+        <var name="UpperBound1At100" type="int" value="9360" />
+        <var name="LowerBound2At100" type="int" value="5040" />
+        <var name="UpperBound2At100" type="int" value="9360" />
+        <var name="LowerBound3At100" type="int" value="0" />
+        <var name="UpperBound3At100" type="int" value="0" />
+        <var name="LowerBound0At20" type="int" value="1008" />
+        <var name="UpperBound0At20" type="int" value="1870" />
+        <var name="LowerBound1At20" type="int" value="1008" />
+        <var name="UpperBound1At20" type="int" value="1870" />
+        <var name="LowerBound2At20" type="int" value="1008" />
+        <var name="UpperBound2At20" type="int" value="1870" />
+        <var name="LowerBound3At20" type="int" value="0" />
+        <var name="UpperBound3At20" type="int" value="0" />
+        <!--station name="BFT2" content="meanRpmAt20 meanRpmAt100" retries="0" log="" result="" weight="100" /-->
+        <!--station name="FFT1" content="meanRpmAt20 meanRpmAt100" retries="0" log="" result="" weight="100" /-->
+    </fancooling>
+    <fanconv>
+        <!--station name="BFT2" content="000" retries="0" log="" result="" weight="100" /-->
+        <!--station name="FFT1" content="000" retries="0" log="" result="" weight="100" /-->
+    </fanconv>
+    <scale>
+        <!--station name="FFT1" content="000" retries="0" log="" result="" weight="100" /-->
+    </scale>
+    <scalebft>
+        <!--station name="BFT2" content="000" retries="0" log="" result="" weight="100" /-->
+    </scalebft>
+    <scalegraph>
+        <!--station name="TEMP" content="meanRpmAt100" retries="0" log="" result="" weight="100" /-->
+    </scalegraph>
+    <probe>
+        <!--station name="BFT2" content="000" retries="0" log="" result="" weight="100" /-->
+        <!--station name="FFT1" content="001" retries="0" log="" result="" weight="100" /-->
+    </probe>
+    <usbcam>
+        <!--station name="FFT1" content="showPreview" retries="0" log="" result="" weight="100" /-->
+    </usbcam>
+    <clearstate>
+        <var name="Pwd" type="str" value="123456" />
+        <!--
+            noPwd: no password used
+            withPwd: password required (not yet implemented)
+         -->
+        <station name="BLT1" content="noPwd" retries="0" log="" result="" weight="998" />
+        <station name="BLT2" content="noPwd" retries="0" log="" result="" weight="998" />
+        <station name="FFT1" content="noPwd" retries="0" log="" result="" weight="998" />
+    </clearstate>
+    <back>
+        <station name="BLT1" content="back" retries="0" log="" result="" weight="999" />
+        <station name="BLT2" content="back" retries="0" log="" result="" weight="999" />
+        <station name="FFT1" content="back" retries="0" log="" result="" weight="999" />
+    </back>
+    <nfc>
+        <station name="BLT2" content="000" retries="0" log="" result="" weight="100" />
+        <station name="FFT1" content="001" retries="0" log="" result="" weight="100" />
+    </nfc>
+</settings>

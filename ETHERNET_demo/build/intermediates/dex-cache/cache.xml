@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\10203021\ETHERNET_demo\app\libs\javalib.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="bcfcbb60b1a471485686ea78b3e1ff36acc2fe84">
+        <dex dex="C:\Users\10203021\ETHERNET_demo\app\build\intermediates\pre-dexed\debug\javalib-1c5e4a38e2feea07402d979968dc581ab92fd248.jar" />
+    </item>
+    <item
+        jar="C:\Users\10203021\ETHERNET_demo9\app\libs\javalib.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="bcfcbb60b1a471485686ea78b3e1ff36acc2fe84">
+        <dex dex="C:\Users\10203021\ETHERNET_demo9\app\build\intermediates\pre-dexed\debug\javalib-22f9e7ef03e02926a492c69b86895cab0f61d99e.jar" />
+    </item>
+    <item
+        jar="C:\Users\10203021\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\10203021\ETHERNET_demo9\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-df049f4e43fb9e17329d5d16143acac6f7781ed6.jar" />
+    </item>
+
+</items>
